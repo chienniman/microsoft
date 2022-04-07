@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="all.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./microsoft_v2.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-left d-flex">
+          <div class="logo">
+            <a href="index2.html">
+              <img src="./pics/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="products-menu">
+            <ul class="d-flex">
+              <li><a href="#">Microsoft365</a></li>
+              <li><a href="#">Office</a></li>
+              <li><a href="#">Windows</a></li>
+              <li><a href="#">Surface</a></li>
+              <li><a href="#">Xbox</a></li>
+              <li><a href="#">支援</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="multi-function-menu">
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                <p class="all-micros">所有Microsoft</p>
+                <img
+                  class="angle-down"
+                  src="./pics/angle-down-solid.svg"
+                  alt=""
+                />
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <ul>
+                  <li>
+                    <a class="span" href="#"><p>軟體</p></a>
+                    <a href="#">
+                      <p>Windows 應用程式</p>
+                    </a>
+                    <a href="#">
+                      <p>OneDrive</p>
+                    </a>
+                    <a href="#">
+                      <p>Outlook</p>
+                    </a>
+                    <a href="#">
+                      <p>Skype</p>
+                    </a>
+                    <a href="#">
+                      <p>OneNote</p>
+                    </a>
+                    <a href="#">
+                      <p>Microsoft Teams</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="span" href="#">
+                      <p>個人電腦與設備</p>
+                    </a>
+                    <a href="#">
+                      <p>選購xbox</p>
+                    </a>
+                    <a href="#">
+                      <p>電腦配件</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="span" href="#"><p>娛樂</p></a>
+                    <a href="#">
+                      <p>Xbox Game Pass Ultimate</p>
+                    </a>
+                    <a href="#">
+                      <p>Xbox Live Gold</p>
+                    </a>
+                    <a href="#">
+                      <p>Xbox 與遊戲</p>
+                    </a>
+                    <a href="#">
+                      <p>電腦遊戲</p>
+                    </a>
+                    <a href="#">
+                      <p>Windows 遊戲</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="span" href="#"><p>商務適用</p></a>
+                    <a href="#">
+                      <p>Microsoft Cloud</p>
+                    </a>
+                    <a href="#">
+                      <p>Microsoft Azure</p>
+                    </a>
+                    <a href="#">
+                      <p>Microsoft Dynamics 365</p>
+                    </a>
+                    <a href="#">
+                      <p>Microsoft 365</p>
+                    </a>
+                    <a href="#">
+                      <p>Microsoft Industry</p>
+                    </a>
+                    <a href="#">
+                      <p>選購商務版</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="span" href="#"><p>Developer & IT</p></a>
+                    <a href="#">
+                      <p>.NET</p>
+                    </a>
+                    <a href="#">
+                      <p>Visual Studio</p>
+                    </a>
+                    <a href="#">
+                      <p>Windows Server</p>
+                    </a>
+                    <a href="#">
+                      <p>開發 Windows 應用程式</p>
+                    </a>
+                    <a href="#">
+                      <p>文件</p>
+                    </a>
+                    <a href="#">
+                      <p>Power Platform</p>
+                    </a>
+                    <a href="#">
+                      <p>Power Apps</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="span" href="#">
+                      <p>其他</p>
+                    </a>
+                    <a href="#">
+                      <p>Microsoft Rewards</p>
+                    </a>
+                    <a href="#">
+                      <p>免費下載與安全性</p>
+                    </a>
+                    <a href="#">
+                      <p>教育</p>
+                    </a>
+                    <a href="#">
+                      <p>禮品卡</p>
+                    </a>
+                    <a href="#">
+                      <p>Licensing</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tooltip">
+              <div class="tooltip-inner d-flex">
+                <p>搜尋</p>
+                <a href="#">
+                  <img class="tooltip-img" src="./pics/scope.png" alt="" />
+                  <span class="tooltiptext">搜尋Microsoft.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="tooltip">
+              <div class="tooltip-inner d-flex">
+                <p>購物車</p>
+                <a href="#">
+                  <img class="tooltip-img" src="./pics/cart.png" alt="" />
+                  <span class="tooltiptext">0個項目在購物車中</span>
+                </a>
+              </div>
+            </div>
+            <div class="tooltip">
+              <div class="tooltip-inner d-flex">
+                <p>登入</p>
+                <a href="#">
+                  <img class="tooltip-img" src="./pics/login_logo.svg" alt="" />
+                  <span class="tooltiptext">Chienniman的帳戶管理員</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-lg">
+            <img src="./pics/swiper_lg_1.webp" alt="" />
+          </div>
+          <div class="swiper-slide slide-lg">
+            <img src="./pics/swiper_lg_2.webp" alt="" />
+          </div>
+          <div class="swiper-slide slide-md ">
+            <img src="./pics/swiper_md_1.webp" alt="" />
+          </div>
+          <div class="swiper-slide slide-md ">
+            <img src="./pics/swiper_md_2.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <script type="module">
+      var swiper = new Swiper(".swiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
