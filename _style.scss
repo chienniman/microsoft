@@ -79,4 +79,21 @@
         }
     }
 }
+.onestore{
+    padding-top: 48px;
+    text-align: center;
+    @include flex(center,center);
+    .logo_wrapper{
+        padding: 12px 30px;
+    }
+    .img_wrapper{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+    .discription{
+        font-weight: bold;
+        padding: 0 21px;
+    }  
+}
   
