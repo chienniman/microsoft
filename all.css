@@ -176,6 +176,80 @@ body {
   padding: 0 21px;
 }
 
+#computer_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+#computer_card .card {
+  width: 25%;
+  padding: 0 12px;
+}
+
+@media (max-width: 1083px) {
+  #computer_card .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 539px) {
+  #computer_card .card {
+    width: 100%;
+  }
+}
+
+#computer_card .card:nth-child(2) .card-text {
+  padding-top: 20px;
+}
+
+#computer_card .card:nth-child(4) .card-text {
+  padding-top: 20px;
+}
+
+#computer_card .card_img {
+  margin-bottom: 12px;
+}
+
+#computer_card .card_img img {
+  width: 100%;
+}
+
+#computer_card .card_body h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#computer_card .card_body .yellow {
+  padding: 3px 14px 5px 14px;
+  background: #ffd800;
+}
+
+#computer_card .card_body a {
+  color: #005da6;
+  font-weight: bold;
+}
+
+#computer_card .card-text {
+  padding-top: 12px;
+}
+
+#computer_card .card-text h2 {
+  padding-bottom: 5px;
+}
+
+#computer_card .card-text p {
+  padding-bottom: 5px;
+}
+
+#computer_card .card-text a {
+  display: block;
+  padding: 10px 3px 7px 2px;
+}
+
 .dropbtn {
   display: -webkit-box;
   display: -ms-flexbox;
