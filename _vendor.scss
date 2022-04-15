@@ -10,6 +10,7 @@
 	border: none;
 	cursor: pointer;
 	outline: none;
+  padding: 12px 0;
   }
   .dropbtn>p{
 	  padding-bottom: 2px;
@@ -161,11 +162,17 @@ html,
       align-items: center;
     }
     .swiper-button-next,.swiper-button-prev{
+      top: 38%!important;
       width: 45px!important;
       height: 45px;
-      background: #2e2e2e;
-      color: #ccc!important;
+      background: #e6e6e6;
       border-radius: 20px;
+      &:hover{
+        background: white;
+      }
+    }
+    .swiper-button-next::after,.swiper-button-prev::after{
+      color: #404040;
     }
 
 

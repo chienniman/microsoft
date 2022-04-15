@@ -131,6 +131,10 @@ body {
   display: none;
 }
 
+.swiper .swiper-slide {
+  position: relative;
+}
+
 @media (max-width: 1083px) {
   .swiper {
     margin: 0 auto;
@@ -141,6 +145,72 @@ body {
   .swiper .slide-lg {
     display: none;
   }
+}
+
+.swiper .slide1 img {
+  position: relative;
+}
+
+.swiper .slide1 .swiper-text {
+  text-align: left;
+  width: 520px;
+  height: 200px;
+  position: absolute;
+  top: 60px;
+  left: 96px;
+}
+
+.swiper .slide1 .swiper-text span {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  background: #ffb900;
+  width: 72px;
+  height: 30px;
+  line-height: 30px;
+  margin: 3px 0;
+}
+
+.swiper .slide1 .swiper-text h2 {
+  display: block;
+  margin: 4.5px 0;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.swiper .slide1 .swiper-text .text {
+  margin-top: 12px;
+}
+
+.swiper .slide1 .swiper-text .more {
+  width: 123px;
+  height: 40px;
+  background: #000;
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.swiper .slide1 .swiper-text .more a {
+  color: white;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+@media (max-width: 1083px) {
+  .swiper .slide1 .swiper-text {
+    display: none;
+  }
+}
+
+.swiper .text .swiper-text {
+  z-index: 100;
 }
 
 .swiper .text .swiper-text span {
@@ -301,6 +371,7 @@ body {
   border: none;
   cursor: pointer;
   outline: none;
+  padding: 12px 0;
 }
 
 .dropbtn > p {
@@ -474,10 +545,18 @@ body {
 }
 
 .swiper-button-next, .swiper-button-prev {
+  top: 38% !important;
   width: 45px !important;
   height: 45px;
-  background: #2e2e2e;
-  color: #ccc !important;
+  background: #e6e6e6;
   border-radius: 20px;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background: white;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  color: #404040;
 }
 /*# sourceMappingURL=all.css.map */

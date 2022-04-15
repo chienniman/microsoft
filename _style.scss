@@ -23,9 +23,6 @@
     max-width: 1600px;
     margin:0 auto ;
         @include flex(space-between,center);
-        // @media(max-width:1083px){
-        //     padding: 0 2%;
-        // }
         .logo{
             @include flex(center,center);
             padding: 0 14.5px;
@@ -69,6 +66,9 @@
     .slide-md{
         display: none;
     }
+    .swiper-slide {
+        position: relative;
+    }
     @media(max-width:1083px){
         margin: 0 auto;
         .slide-md{
@@ -78,8 +78,59 @@
             display: none;
         }
     }
+    .slide1{
+        img{
+            position: relative;
+        }
+        .swiper-text{
+            text-align: left;
+            width: 520px;
+            height: 200px;
+            position: absolute;
+            top:60px;
+            left: 96px;
+            span{
+                text-align: center;
+                font-weight: bold;
+                display: block;
+                background: #ffb900;
+                width: 72px;
+                height: 30px;
+                line-height: 30px;
+                margin: 3px 0;
+            }
+            h2{
+                display: block;
+                margin: 4.5px 0;
+                font-weight: bold;
+                font-size: 34px;
+            }
+            .text{
+                margin-top: 12px;
+            }
+            .more{
+                width: 123px;
+                height: 40px;
+                background: #000;
+                margin-top: 12px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                a{
+                    color: white;
+                    font-weight: bold;
+                    line-height: 40px;
+                }
+            }
+            @media(max-width:1083px){
+                display: none;
+            }
+        }
+
+    }
     .text{
         .swiper-text{
+            z-index: 100;
             span{
                 background: #ffb900;
                 padding: 3px 14px 5px 14px;
