@@ -46,6 +46,60 @@ body {
   }
 }
 
+.header .bars {
+  display: none;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin: 1px;
+  padding: 6px 2px 8px 2px;
+}
+
+.header .bars div {
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header .bars div div {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background: #000;
+}
+
+.header .bars div div:nth-child(1) {
+  top: 0;
+}
+
+.header .bars div div:nth-child(3) {
+  top: 16px;
+}
+
+@media (max-width: 859px) {
+  .header .bars {
+    display: block;
+  }
+}
+
+.header .search {
+  display: none;
+  width: 34px;
+  height: 32px;
+  background-image: url("./pics/scope.png");
+  background-size: cover;
+}
+
+@media (max-width: 859px) {
+  .header .search {
+    display: block;
+  }
+}
+
 .header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
