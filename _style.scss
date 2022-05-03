@@ -127,15 +127,13 @@
         }
     }
 .swiper{
-    .slide-md{
-        display: none;
-    }
-    .swiper-slide {
-        position: relative;
-    }
+    overflow: unset !important;
     .slide1{
         img{
             position: relative;
+            @media(max-width:1083px){
+                height: 590px;
+            }
         }
         .swiper-text{
             text-align: left;
@@ -218,8 +216,90 @@
             }
         }
     }
+    .swiper-md-text{
+        display: none;
+        position: relative;
+        @media(max-width:767px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e6e6e6;
+            position: absolute;
+            top: 590px;
+            height: 340px;
+            z-index:100;
+        }
+        span{
+            background: #ffb900;
+            padding: 3px 14px 5px 14px;
+            margin: 3px 0;
+            width: 44px;
+            height: 22px;
+        }
+        
+    }
+    .slide2{
+        img{
+            position: relative;
+            @media(max-width:1083px){
+                height: 590px;
+            }
+        }
+        .microsoft365-text{
+            position: absolute;
+            left: 60px;
+            text-align: left;
+            .span{
+                text-align: center;
+                font-weight: bold;
+                display: block;
+                background: #ffb900;
+                width: 72px;
+                height: 30px;
+                line-height: 30px;
+                margin: 3px 0;
+            }
+            h2{
+                display: block;
+                margin: 4.5px 0;
+                font-weight: bold;
+                font-size: 34px;
+            }
+            .text{
+                margin-top: 12px;
+            }
+            @media(max-width:768px){
+                display: none;
+            }
+        }
+        .user_number{
+            display: flex;
+            margin-top: 12px;
+            padding: 12px 2px 0 0;
+            .use{
+                padding: 8px 20px;
+            }
+            .six_use{
+                background: #000;
+                color: white;
+            }
+            .user_number_text:hover{
+                margin-right: 5px;
+            }
+        }
+    }
+    .swiper-button-next,.swiper-button-prev{
+        position: absolute;
+        top: 50% !important;
+        @media(max-width:1083px){
+            top: 550px !important;
+        }
+    }
 }
 .onestore{
+     @media(max-width:767px){
+        margin-top: 340px;
+    }
     padding-top: 48px;
     text-align: center;
     @include flex(center,center);

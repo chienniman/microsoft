@@ -210,16 +210,18 @@ body {
   }
 }
 
-.swiper .slide-md {
-  display: none;
-}
-
-.swiper .swiper-slide {
-  position: relative;
+.swiper {
+  overflow: unset !important;
 }
 
 .swiper .slide1 img {
   position: relative;
+}
+
+@media (max-width: 1083px) {
+  .swiper .slide1 img {
+    height: 590px;
+  }
 }
 
 .swiper .slide1 .swiper-text {
@@ -323,6 +325,114 @@ body {
   font-weight: bold;
 }
 
+.swiper .swiper-md-text {
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .swiper .swiper-md-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #e6e6e6;
+    position: absolute;
+    top: 590px;
+    height: 340px;
+    z-index: 100;
+  }
+}
+
+.swiper .swiper-md-text span {
+  background: #ffb900;
+  padding: 3px 14px 5px 14px;
+  margin: 3px 0;
+  width: 44px;
+  height: 22px;
+}
+
+.swiper .slide2 img {
+  position: relative;
+}
+
+@media (max-width: 1083px) {
+  .swiper .slide2 img {
+    height: 590px;
+  }
+}
+
+.swiper .slide2 .microsoft365-text {
+  position: absolute;
+  left: 60px;
+  text-align: left;
+}
+
+.swiper .slide2 .microsoft365-text .span {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  background: #ffb900;
+  width: 72px;
+  height: 30px;
+  line-height: 30px;
+  margin: 3px 0;
+}
+
+.swiper .slide2 .microsoft365-text h2 {
+  display: block;
+  margin: 4.5px 0;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.swiper .slide2 .microsoft365-text .text {
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .swiper .slide2 .microsoft365-text {
+    display: none;
+  }
+}
+
+.swiper .slide2 .user_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+  padding: 12px 2px 0 0;
+}
+
+.swiper .slide2 .user_number .use {
+  padding: 8px 20px;
+}
+
+.swiper .slide2 .user_number .six_use {
+  background: #000;
+  color: white;
+}
+
+.swiper .slide2 .user_number .user_number_text:hover {
+  margin-right: 5px;
+}
+
+.swiper .swiper-button-next, .swiper .swiper-button-prev {
+  position: absolute;
+  top: 50% !important;
+}
+
+@media (max-width: 1083px) {
+  .swiper .swiper-button-next, .swiper .swiper-button-prev {
+    top: 550px !important;
+  }
+}
+
 .onestore {
   padding-top: 48px;
   text-align: center;
@@ -335,6 +445,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 767px) {
+  .onestore {
+    margin-top: 340px;
+  }
 }
 
 .onestore .logo_wrapper {
