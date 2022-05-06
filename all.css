@@ -513,11 +513,18 @@ body {
 }
 
 @media (max-width: 436px) {
-  .swiper .swiper-md-text2 .user_number .user_number_text {
+  .swiper .swiper-md-text2 .user_number {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: calc((100% - 190px)/2);
+  }
+}
+
+@media (max-width: 436px) {
+  .swiper .swiper-md-text2 .user_number .six_use {
+    width: 190px;
   }
 }
 
@@ -546,6 +553,7 @@ body {
 }
 
 .onestore {
+  position: relative;
   padding-top: 48px;
   text-align: center;
   display: -webkit-box;
@@ -563,6 +571,52 @@ body {
   .onestore {
     margin-top: 340px;
   }
+}
+
+@media (max-width: 767px) {
+  .onestore .logo_groups {
+    display: none;
+  }
+}
+
+.onestore .logo_md_group {
+  display: none;
+  position: absolute;
+  top: -70px;
+  left: 25px;
+}
+
+@media (max-width: 767px) {
+  .onestore .logo_md_group {
+    display: block;
+  }
+}
+
+.onestore .logo_md_group li {
+  padding: 5px 6px;
+}
+
+.onestore .logo_md_group .logo {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.onestore .logo_md_group .logo_img {
+  width: 20px;
+}
+
+.onestore .logo_md_group .logo_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .onestore .logo_wrapper {
@@ -593,6 +647,12 @@ body {
   margin: 0 -12px;
 }
 
+@media (max-width: 1083px) {
+  #computer_card {
+    padding: 0 5% !important;
+  }
+}
+
 #computer_card .card {
   width: 25%;
   padding: 0 12px;
@@ -601,6 +661,7 @@ body {
 @media (max-width: 1083px) {
   #computer_card .card {
     width: 50%;
+    padding-bottom: 80px;
   }
 }
 
@@ -656,6 +717,11 @@ body {
 #computer_card .card-text a {
   display: block;
   padding: 10px 3px 7px 2px;
+}
+
+#microsoft_onedrive .title {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .dropbtn {

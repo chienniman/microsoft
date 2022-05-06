@@ -352,8 +352,12 @@
             justify-content: center;
             flex-wrap: wrap;
             @media(max-width:436px){
-                .user_number_text{
-                    flex-direction: column;
+            flex-direction: column;
+            padding-left: calc((100% - 190px)/2);
+            }
+            .six_use{
+                @media(max-width:436px){
+                    width: 190px;
                 }
             }
         }
@@ -376,12 +380,40 @@
     }
 }
 .onestore{
+    position: relative;
      @media(max-width:767px){
         margin-top: 340px;
     }
     padding-top: 48px;
     text-align: center;
     @include flex(center,center);
+    .logo_groups{
+        @media(max-width:767px){
+            display: none;
+        }
+    }
+    .logo_md_group{
+        display: none;
+        @media(max-width:767px){
+            display: block;
+        }
+        position: absolute;
+        top: -70px;
+        left: 25px;
+       li{
+           padding: 5px 6px;
+       }
+       .logo{
+        width: 200px;
+        display: flex;
+       }
+       .logo_img{
+           width: 20px;
+       }
+       .logo_text{
+        @include flex(center,center);
+       }
+    }
     .logo_wrapper{
         padding: 12px 30px;
     }
@@ -396,6 +428,9 @@
     }  
 }
 #computer_card{
+    @media(max-width:1083px){
+        padding:0 5% !important;
+    }
     display: flex;
     flex-wrap: wrap;
     margin: 0 -12px;
@@ -403,6 +438,7 @@
         width: 25%;
         @media(max-width:1083px){
             width: 50%;
+            padding-bottom: 80px;
         }
         @media(max-width:539px){
             width: 100%;
@@ -452,6 +488,12 @@
             display: block;
             padding: 10px 3px 7px 2px;
         }
+    }
+}
+#microsoft_onedrive{
+    .title{
+        font-size: 24px;
+        font-weight: 600;
     }
 }
   
