@@ -350,6 +350,12 @@
         .user_number{
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            @media(max-width:436px){
+                .user_number_text{
+                    flex-direction: column;
+                }
+            }
         }
     }
     .swiper-button-next,.swiper-button-prev{
