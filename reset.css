@@ -52,3 +52,6 @@ a{
 .d-flex{
     display: flex;
 }
+body{
+	overflow-x: hidden;
+}

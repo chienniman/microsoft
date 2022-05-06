@@ -26,6 +26,7 @@ body {
 }
 
 .header {
+  position: relative;
   max-width: 1600px;
   margin: 0 auto;
   display: -webkit-box;
@@ -37,6 +38,66 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 859px) {
+  .header {
+    height: 54px;
+  }
+}
+
+.header .bars {
+  display: none;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin: 1px;
+  padding: 6px 2px 8px 2px;
+}
+
+.header .bars div {
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header .bars div div {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background: #000;
+}
+
+.header .bars div div:nth-child(1) {
+  top: 0;
+}
+
+.header .bars div div:nth-child(3) {
+  top: 16px;
+}
+
+@media (max-width: 859px) {
+  .header .bars {
+    display: block;
+  }
+}
+
+.header .search {
+  display: none;
+  width: 34px;
+  height: 32px;
+  background-image: url("./pics/scope.png");
+  background-size: cover;
+}
+
+@media (max-width: 859px) {
+  .header .search {
+    display: block;
+  }
 }
 
 .header .logo {
@@ -86,6 +147,22 @@ body {
   border-bottom: 2px solid black;
 }
 
+@media (max-width: 859px) {
+  .header .products-menu ul > li {
+    display: none;
+  }
+}
+
+@media (max-width: 859px) {
+  .header .header-left {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 .header .header-right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -121,34 +198,36 @@ body {
   padding: 0 18.5px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1399px) {
   .header .tooltip-inner > p {
     display: none;
   }
 }
 
-.swiper .slide-md {
-  display: none;
-}
-
-.swiper .swiper-slide {
-  position: relative;
-}
-
-@media (max-width: 1083px) {
-  .swiper {
-    margin: 0 auto;
-  }
-  .swiper .slide-md {
-    display: block;
-  }
-  .swiper .slide-lg {
+@media (max-width: 859px) {
+  .header .myDropdown, .header .magnifying-glass, .header .dropdown {
     display: none;
+  }
+}
+
+.swiper {
+  overflow: hidden !important;
+}
+
+@media (max-width: 767px) {
+  .swiper {
+    overflow: unset !important;
   }
 }
 
 .swiper .slide1 img {
   position: relative;
+}
+
+@media (max-width: 1083px) {
+  .swiper .slide1 img {
+    height: 340px;
+  }
 }
 
 .swiper .slide1 .swiper-text {
@@ -203,7 +282,7 @@ body {
   line-height: 40px;
 }
 
-@media (max-width: 1083px) {
+@media (max-width: 767px) {
   .swiper .slide1 .swiper-text {
     display: none;
   }
@@ -252,9 +331,283 @@ body {
   font-weight: bold;
 }
 
+.swiper .swiper-md-text {
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .swiper .swiper-md-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #e6e6e6;
+    position: absolute;
+    top: 340px;
+    height: 340px;
+    z-index: 100;
+  }
+}
+
+.swiper .swiper-md-text span {
+  background: #ffb900;
+  padding: 3px 14px 5px 14px;
+  margin: 3px 0;
+  width: 44px;
+  height: 22px;
+}
+
+.swiper .swiper-md-text h2 {
+  height: 24px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.swiper .swiper-md-text .more {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper .swiper-md-text .more a {
+  display: block;
+  width: 123px;
+  height: 39px;
+  line-height: 39px;
+  color: white;
+  background: #000;
+  font-weight: bold;
+}
+
+.swiper .slide2 img {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .swiper .slide2 img {
+    height: 421px;
+  }
+}
+
+.swiper .slide2 .microsoft365-text {
+  position: absolute;
+  left: 60px;
+  text-align: left;
+}
+
+.swiper .slide2 .microsoft365-text .span {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  background: #ffb900;
+  width: 72px;
+  height: 30px;
+  line-height: 30px;
+  margin: 3px 0;
+}
+
+.swiper .slide2 .microsoft365-text h2 {
+  display: block;
+  margin: 4.5px 0;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.swiper .slide2 .microsoft365-text .text {
+  margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+  .swiper .slide2 .microsoft365-text {
+    display: none;
+  }
+}
+
+.swiper .slide2 .user_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+  padding: 12px 2px 0 0;
+}
+
+.swiper .slide2 .user_number .use {
+  padding: 8px 20px;
+}
+
+.swiper .slide2 .user_number .six_use {
+  background: #000;
+  color: white;
+}
+
+.swiper .slide2 .user_number .user_number_text:hover {
+  margin-right: 5px;
+}
+
+.swiper .swiper-md-text2 {
+  position: absolute;
+  display: none;
+  top: 340px;
+  width: 100%;
+  height: 340px;
+  background: #e6e6e6;
+}
+
+@media (max-width: 767px) {
+  .swiper .swiper-md-text2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.swiper .swiper-md-text2 .span {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  background: #ffb900;
+  width: 72px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.swiper .swiper-md-text2 h2 {
+  display: block;
+  margin: 4.5px 0;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.swiper .swiper-md-text2 .text {
+  margin-top: 12px;
+}
+
+.swiper .swiper-md-text2 .user_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 436px) {
+  .swiper .swiper-md-text2 .user_number {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: calc((100% - 190px)/2);
+  }
+}
+
+@media (max-width: 436px) {
+  .swiper .swiper-md-text2 .user_number .six_use {
+    width: 190px;
+  }
+}
+
+.swiper .swiper-button-next, .swiper .swiper-button-prev {
+  position: absolute;
+  top: 50% !important;
+}
+
+@media (max-width: 1083px) {
+  .swiper .swiper-button-next, .swiper .swiper-button-prev {
+    top: 50% !important;
+  }
+}
+
+@media (max-width: 1083px) {
+  .swiper .swiper-button-next, .swiper .swiper-button-prev {
+    top: 80% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper .swiper-pagination {
+    position: absolute;
+    top: 650px !important;
+  }
+}
+
 .onestore {
+  position: relative;
   padding-top: 48px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .onestore {
+    margin-top: 340px;
+  }
+}
+
+@media (max-width: 767px) {
+  .onestore .logo_groups {
+    display: none;
+  }
+}
+
+.onestore .logo_md_group {
+  display: none;
+  position: absolute;
+  top: -70px;
+  left: 25px;
+}
+
+@media (max-width: 767px) {
+  .onestore .logo_md_group {
+    display: block;
+  }
+}
+
+.onestore .logo_md_group li {
+  padding: 5px 6px;
+}
+
+.onestore .logo_md_group .logo {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.onestore .logo_md_group .logo_img {
+  width: 20px;
+}
+
+.onestore .logo_md_group .logo_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,6 +647,12 @@ body {
   margin: 0 -12px;
 }
 
+@media (max-width: 1083px) {
+  #computer_card {
+    padding: 0 5% !important;
+  }
+}
+
 #computer_card .card {
   width: 25%;
   padding: 0 12px;
@@ -302,6 +661,7 @@ body {
 @media (max-width: 1083px) {
   #computer_card .card {
     width: 50%;
+    padding-bottom: 80px;
   }
 }
 
@@ -357,6 +717,11 @@ body {
 #computer_card .card-text a {
   display: block;
   padding: 10px 3px 7px 2px;
+}
+
+#microsoft_onedrive .title {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .dropbtn {
